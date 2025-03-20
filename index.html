@@ -7,11 +7,11 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CCTETQqi.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Bp_Fl5CY.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DaoJjBIP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/LH2mDRQv.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Cm12Brvl.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/CudifvNQ.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.Eq2essyC.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.C-zMvimL.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/NDm9_oa7.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/B14L6qun.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.DSAJzmRj.js">
@@ -23,7 +23,7 @@
 			
 			<script>
 				{
-					__sveltekit_qmuyzi = {
+					__sveltekit_fht3ht = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/scannerApp"
 					};
@@ -31,8 +31,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CCTETQqi.js"),
-						import("./_app/immutable/entry/app.Eq2essyC.js")
+						import("./_app/immutable/entry/start.DaoJjBIP.js"),
+						import("./_app/immutable/entry/app.C-zMvimL.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -41,6 +41,12 @@
 							error: null
 						});
 					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
 				}
 			</script>
 		</div>
