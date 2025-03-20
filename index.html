@@ -1,14 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/scannerApp/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Svelte + TS</title>
-    <script type="module" crossorigin src="/scannerApp/assets/index-D5SFYXsP.js"></script>
-    <link rel="stylesheet" crossorigin href="/scannerApp/assets/index-yJpzg09Q.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CQYyZw-q.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/iuRzfTiG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Cm12Brvl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CudifvNQ.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CWPWR6Ys.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/NDm9_oa7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B14L6qun.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.DSAJzmRj.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.D3UCnFQ7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/mYouIKQ6.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><h1>Welcome to SvelteKit</h1> <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_fiboop = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/scannerApp"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.CQYyZw-q.js"),
+						import("./_app/immutable/entry/app.CWPWR6Ys.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
