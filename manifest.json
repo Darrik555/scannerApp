@@ -1,6 +1,7 @@
 {
 	"name": "ScannerApp",
 	"short_name": "scanner-app",
+    "id": "/scannerApp",
 	"start_url": "/scannerApp",
 	"display": "standalone",
 	"theme_color": "#ffffff",
